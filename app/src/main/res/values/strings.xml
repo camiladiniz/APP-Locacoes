@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FP Projetos</string>
+    <string name="tipoVeiculo">Categoria do veículo:</string>
+    <string name="onibuscb">Ônibus</string>
+    <string name="vanCb">Van</string>
+    <string name="cadastrarVeiculo">Cadastrar</string>
+    <string name="onibus">Onibus</string>
+    <string name="van">Van</string>
+    <string name="infLocacoes">Realizar locação de transporte</string>
+</resources>

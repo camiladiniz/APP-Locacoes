@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocacaoVeiculoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:srcCompat="@drawable/fp" />
+
+            <TextView
+                android:id="@+id/inf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do veículo selecionado"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/modelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/cardview_dark_background"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/marca"
+                android:textSize="18sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/placa"
+                android:textSize="18sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/cardview_dark_background"
+                android:id="@+id/qntMaximaPassageiros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/diariaValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="true"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/locacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infLocacoes"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/digiteNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digite seu nome" />
+
+            <EditText
+                android:id="@+id/idNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu nome"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/digiteOrigem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informe a origem da viagem" />
+
+            <EditText
+                android:id="@+id/origem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Local de Origem"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/digiteDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informe o destino da viagem" />
+
+            <EditText
+                android:id="@+id/destino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Local de Destino"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data de Início da locação" />
+
+            <EditText
+                android:id="@+id/dataInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="dd/MM/yyyy" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data de Devolução" />
+
+            <EditText
+                android:id="@+id/dataDevolucao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="dd/MM/yyyy" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantidade máxima de pessoa suportada: " />
+
+            <EditText
+                android:id="@+id/qntPassageirosNecessaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/contratarMotorista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contratar Motorista" />
+
+            <Button
+                android:id="@+id/btnAlugar"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/cardview_dark_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alugar" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
